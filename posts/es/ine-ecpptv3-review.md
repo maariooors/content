@@ -122,6 +122,6 @@ No obstante, para aquel que se quiera examinar, tengo la siguiente cheatsheet fo
 
 > Terrible referencia a esta [broma](https://cdn.deephacking.tech/i/posts/ine-ecpptv2-review/ine-ecpptv2-review-3.avif) de Juan en la reseña del eCPPTv2.
 
-No, en serio, ahora de verdad: tenéis este [enlace](https://blog.deephacking.tech/es/posts/ine-ecpptv3-review/) a otro post de este blog donde encontraréis una cheatsheet dividida por secciones que os va a ser súper útil a la hora de enfrentaros al examen.
+No, en serio, ahora de verdad: tenéis este [enlace](https://blog.deephacking.tech/es/posts/ine-ecpptv3-cheatsheet/) a otro post de este blog donde encontraréis una cheatsheet dividida por secciones que os va a ser súper útil a la hora de enfrentaros al examen.
 
 Y, sobre todo, muchísima suerte, chavales. Ya veréis como lo sacáis a la primera y sin complicaciones :)
