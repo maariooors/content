@@ -2,24 +2,32 @@
 id: "ine-ecpptv3-review"
 title: "eCPPTv3 Review - Certified Professional Penetration Tester 2026"
 author: "mario-ramos-salson"
-publishedDate: YYYY-MM-DD
-updatedDate: YYYY-MM-DD
+publishedDate: 2026-03-24
+updatedDate: 2026-03-24
 image: ""
 description: "Review completa de la certificación eCPPTv3 de INE eLearnSecurity: preparación, examen, consejos y si realmente vale la pena"
 categories:
-  - "certificaciones"
+  - "certifications"
 draft: false
 featured: false
 lang: "es"
 ---
 
-¿Que pasa, chavales? ¿Cómo vais? Mi _apodo_ por ahí es **maariooors** o **mrsx0A** (que es más alternativo), pero vamos, que me llamo **Mario**. Hace unas semanas me examiné del eCPPTv3 de INE eLearnSecurity, después de haber estudiado un par de meses y de haberme hecho el curso entero que tiene INE en su plataforma. Tras aprobarlo, la verdad es que me quedé un poco con la necesidad de hablar al respecto de esta certificación. Así que aquí va mi review sobre el [eCPPTv3](https://ine.com/security/certifications/ecppt-certification).
+¿Qué pasa, chavales? ¿Cómo vais? Mi _apodo_ por ahí es **maariooors** o **mrsx0A** (que es más alternativo), pero vamos, que me llamo **Mario**. Hace unas semanas me examiné del eCPPTv3 de INE eLearnSecurity, después de haber estudiado un par de meses y de haberme hecho el curso entero que tiene INE en su plataforma. Tras aprobarlo, la verdad es que me quedé un poco con la necesidad de hablar al respecto de esta certificación. Así que aquí va mi review sobre el [eCPPTv3](https://ine.com/security/certifications/ecppt-certification).
 
 Pero antes, mirad y apreciad qué bonito es este trozo de papel digital (AKA foto).
 
 ![Portada certificación eCPPTv3](images/ine-ecpptv3-review-2.jpg)
 
 ---
+
+- [Contexto](#contexto)
+- [eCPPTv2 vs eCPPTv3](#ecpptv2-vs-ecpptv3)
+- [El curso de INE](#el-curso-de-ine)
+- [¿Cómo es el examen?](#cómo-es-el-examen)
+- [Consejos](#consejos)
+- [¿Vale la pena?](#vale-la-pena)
+- [Cheatsheet para aprobar 100% seguro no fake v2](#cheatsheet-para-aprobar-100-seguro-no-fake-v2)
 
 ## Contexto
 
@@ -41,7 +49,7 @@ Y, para añadir una cuarta, el examen se hacía a través de una VPN con tu prop
 
 Pueeees... las cosas han cambiado, y mucho :(
 
-Ya **NO** hay pivoting, pero nada de nada. Hay más pivoting en el eJPTv3 que en este examen. Y se han cargado por completo el tema del Buffer Overflow (aunque no lo han quitado del curso). Pero de eso hablaremos más adelane. Y como no, ya no son 14 días con VPN, ahora son 24h y en un entorno de **Guacamole**. Si, guacamole :(
+Ya **NO** hay pivoting, pero nada de nada. Hay más pivoting en el eJPTv3 que en este examen. Y se han cargado por completo el tema del Buffer Overflow (aunque no lo han quitado del curso). Pero de eso hablaremos más adelante. Y como no, ya no son 14 días con VPN, ahora son 24h y en un entorno de **Guacamole**. Sí, guacamole :(
 
 Pero bueno, no todo es quitar: han metido mucho **Active Directory**, tanto en el curso como en el examen. Pero de esto hablaremos cuando lleguemos a esa sección.
 
@@ -94,7 +102,7 @@ Y otra queja muy repetida, y que prácticamente he leído en cualquier review ac
 
 Entonces sí, es de coña: te ponen un AD entero que solo es vulnerable a fuerza bruta y nada más (al menos ese fue el caso de mi examen, el tuyo puede ser algo diferente).
 
-Pero para que os hagáis una idea, me acuerdo, aunque ya haya pasado cerca de 1 mes, de una pregunta que decía _"cuál de los siguientes usuarios es vulnerable a password spraying"_ y te daban 4 opciones. Esa pregunta se resolvía haciendo una lista con esos 4 usuarios y lanzándoles el **rockyou.txt**. Sí, el rockyou. ¿Qué clase de _"password spraying"_ es ese?
+Pero para que os hagáis una idea, me acuerdo, aunque ya haya pasado cerca de 1 mes, de una pregunta que decía _"cuál de los siguientes usuarios es vulnerable a password spraying"_ y te daban 4 opciones. Esa pregunta se resolvía haciendo una lista con esos 4 usuarios y lanzándoles el `rockyou.txt`. Sí, el rockyou. ¿Qué clase de _"password spraying"_ es ese?
 
 Y ya está, esa es la gracia del examen...
 
@@ -104,7 +112,7 @@ Como consejos, la verdad, pues un poco lo que he mencionado arriba: leer muy bie
 
 Toma descansos de vez en cuando, hay tiempo más que de sobra para completar el examen, no te agobies. Come algo, date un paseo, bebe agua para refrescar la cabeza (y para coger la costumbre de ducharte, que seguro que lo haces poco... :) )
 
-Y el consejo más útil, y que más pena me da: hay una carpeta en el escritorio del examen con varias wordlists. Cuando tengas que hacer fuerza bruta, usa de la más pequeña a la más grande, dejando para el final el **rockyou.txt**.
+Y el consejo más útil, y que más pena me da: hay una carpeta en el escritorio del examen con varias wordlists. Cuando tengas que hacer fuerza bruta, usa de la más pequeña a la más grande, dejando para el final el `rockyou.txt`.
 
 ## ¿Vale la pena?
 
@@ -122,6 +130,6 @@ No obstante, para aquel que se quiera examinar, tengo la siguiente cheatsheet fo
 
 > Terrible referencia a esta [broma](https://cdn.deephacking.tech/i/posts/ine-ecpptv2-review/ine-ecpptv2-review-3.avif) de Juan en la reseña del eCPPTv2.
 
-No, en serio, ahora de verdad: tenéis este [enlace](https://blog.deephacking.tech/es/posts/ine-ecpptv3-cheatsheet/) a otro post de este blog donde encontraréis una cheatsheet dividida por secciones que os va a ser súper útil a la hora de enfrentaros al examen.
+No, en serio, ahora de verdad: tenéis esta [cheatsheet del eCPPTv3](https://blog.deephacking.tech/es/posts/ine-ecpptv3-cheatsheet/) en otro post de este blog donde encontraréis una cheatsheet dividida por secciones que os va a ser súper útil a la hora de enfrentaros al examen.
 
 Y, sobre todo, muchísima suerte, chavales. Ya veréis como lo sacáis a la primera y sin complicaciones :)

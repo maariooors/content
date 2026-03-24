@@ -2,8 +2,8 @@
 id: "ine-ecpptv3-review"
 title: "eCPPTv3 Review - Certified Professional Penetration Tester 2026"
 author: "mario-ramos-salson"
-publishedDate: YYYY-MM-DD
-updatedDate: YYYY-MM-DD
+publishedDate: 2026-03-24
+updatedDate: 2026-03-24
 image: ""
 description: "A Comprehensive Review of INE eLearnSecurity’s eCPPTv3 Certification: Preparation, Exam, Tips, and Whether It’s Really Worth It"
 categories:
@@ -17,9 +17,17 @@ What's up, guys? How are you doing? My _nickname_ out there is **maariooors** or
 
 But first, look at and appreciate how beautiful this piece of digital paper is (AKA photo).
 
-![Portada certificación eCPPTv3](images/ine-ecpptv3-review-2.jpg)
+![eCPPTv3 certification cover](images/ine-ecpptv3-review-2.jpg)
 
 ---
+
+- [Context](#context)
+- [eCPPTv2 vs eCPPTv3](#ecpptv2-vs-ecpptv3)
+- [The INE Course](#the-ine-course)
+- [What Is the Exam Like?](#what-is-the-exam-like)
+- [Tips](#tips)
+- [Is It Worth It?](#is-it-worth-it)
+- [Cheatsheet to Pass 100% Guaranteed Not Fake v2](#cheatsheet-to-pass-100-guaranteed-not-fake-v2)
 
 ## Context
 
@@ -45,7 +53,7 @@ There is **NO** more pivoting at all, like none whatsoever. There's more pivotin
 
 But well, it's not all about removing stuff: they added a lot of **Active Directory**, both in the course and in the exam. But we'll talk about that when we get to that section.
 
-## INE Course
+## The INE Course
 
 As for the course that INE provides for this exam, honestly, it doesn't look bad at all.
 
@@ -71,7 +79,7 @@ But then, what's the problem? Well, in a real exam environment or a real red tea
 
 In the exam, they give you a Kali machine and basically tell you: "come on, get to work", and if all you did was watch the course and nothing else, you're going to have a problem, because you won't know how to use tools like **impacket** or **netexec**. So, what should you do? My biggest recommendation is that you watch the AD-related content, take notes on everything, and then go practice it all on your own to try to do everything that was explained in the videos, but instead of using **PowerView** or **PowerUp**, use the **impacket** _suite_, **netexec / crackmapexec**, and the rest of the tools that are normally used in this kind of exercise. (Don't worry, there's a little gift at the end of this post :)
 
-## What is the exam like?
+## What Is the Exam Like?
 
 And now, yes... the **EXAM!!!** This is where what is, for me, the worst part of this certification really shows up.
 
@@ -94,7 +102,7 @@ And another very common complaint, one that I've seen in pretty much every revie
 
 So yes, it's a joke: they give you a whole AD that is only vulnerable to brute force and nothing else (at least that was the case in my exam, yours might be a bit different).
 
-Just so you get an idea, I still remember, even though it's been almost a month, one question that said _"which of the following users is vulnerable to password spraying"_ and then gave you 4 options. That question was solved by making a list with those 4 users and throwing **rockyou.txt** at them. Yeah, rockyou. What kind of _"password spraying"_ is that supposed to be?
+Just so you get an idea, I still remember, even though it's been almost a month, one question that said _"which of the following users is vulnerable to password spraying"_ and then gave you 4 options. That question was solved by making a list with those 4 users and throwing `rockyou.txt` at them. Yeah, rockyou. What kind of _"password spraying"_ is that supposed to be?
 
 And that's it, that's the whole gimmick of the exam...
 
@@ -104,10 +112,10 @@ As for advice, honestly, it's pretty much what I mentioned above: read the quest
 
 Take breaks from time to time, there is more than enough time to complete the exam, so don't stress yourself out. Eat something, go for a walk, get some water to clear your head (and to get used to showering, because you probably don't do it much... :)
 
-And the most useful piece of advice, and the one that makes me the saddest: there is a folder on the exam desktop with several wordlists. When you have to brute force, go from the smallest one to the biggest one, leaving **rockyou.txt** for last.
+And the most useful piece of advice, and the one that makes me the saddest: there is a folder on the exam desktop with several wordlists. When you have to brute force, go from the smallest one to the biggest one, leaving `rockyou.txt` for last.
 
 
-## Is it worth it?
+## Is It Worth It?
 
 After everything I've said up to this point, this section feels a bit xd, but anyway, to the question of whether it's worth it?
 
@@ -115,7 +123,7 @@ Weeell... it depends, honestly. There are other exams in this _"professional"_ l
 
 INE tends to run offers from time to time, and you can get the cert + course for around **300 euros**. At that price, I would actually consider taking it. It's true that the exam itself is not good at all, but whether you like it or not, through the videos, notes, and practicing the knowledge you pick up throughout the course, you do end up learning things. But with certs like the CPTS already on the market, I'd honestly take a good look at those first.
 
-## Cheat sheet to pass 100% guaranteed, not fake v2
+## Cheatsheet to Pass 100% Guaranteed Not Fake v2
 
 That said, for anyone who wants to take the exam, I've got the following cheatsheet forged by Zeus himself.
 
@@ -123,6 +131,6 @@ That said, for anyone who wants to take the exam, I've got the following cheatsh
 
 > Terrible reference to this [joke](https://cdn.deephacking.tech/i/posts/ine-ecpptv2-review/ine-ecpptv2-review-3.avif) by Juan in the eCPPTv2 review.
 
-No, seriously, for real this time: here's a [link](https://blog.deephacking.tech/en/posts/ine-ecpptv3-cheatsheet/) to another post on this blog where you'll find a cheatsheet split into sections that will be super useful when it comes to facing the exam.
+No, seriously, for real this time: you can find this [eCPPTv3 cheatsheet](https://blog.deephacking.tech/en/posts/ine-ecpptv3-cheatsheet/) in another post on this blog where you'll find a cheatsheet split into sections that will be super useful when it comes to facing the exam.
 
 And above all, best of luck, guys. You'll see, you'll pass it on the first try with no trouble at all :)

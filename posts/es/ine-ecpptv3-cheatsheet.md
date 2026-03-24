@@ -2,12 +2,12 @@
 id: "ine-ecpptv3-cheatsheet"
 title: "eCPPTv3 Cheatsheet"
 author: "mario-ramos-salson"
-publishedDate: YYYY-MM-DD
-updatedDate: YYYY-MM-DD
+publishedDate: 2026-03-24
+updatedDate: 2026-03-24
 image: ""
 description: "eLearnSecurity eCPPTv3 cheatsheet"
 categories:
-  - "certificaciones"
+  - "certifications"
 draft: false
 featured: false
 lang: "es"
@@ -25,6 +25,7 @@ La forma en la que está estructurada esta cheatsheet es la siguiente:
 - [Ataque Kerberoasting](#ataque-kerberoasting)
 - [Hash Dump](#hash-dump)
 - [Gestores de contenidos](#gestores-de-contenidos)
+- [Fuerza bruta](#fuerza-bruta)
 
 Como podéis ver, no es una cheatsheet entera de cualquier cosa, sino que está un poco enfocada a este examen en específico.
 
@@ -32,7 +33,7 @@ De hecho, se ve claramente que la mayoría de cosas tienen que ver con AD, ya qu
 
 Espero que os sirva y que os salve de un apuro, o que os ayude a aprender algo nuevo :)
 
-Y, si pensáis que falta algo o queréis hacer alguna aportación, no dudéis en contactarme. ¡Un abrazoo!
+Y, si pensáis que falta algo o queréis hacer alguna aportación, no dudéis en contactarme. ¡Un abrazo!
 
 ## Enumeración de puertos / servicios
 
@@ -103,17 +104,17 @@ enum4linux -U -M -S -P -G 10.10.10.10
 ```
 
 Flags:
-- -o: obtiene información del sistema operativo remoto.
-- -U: enumera usuarios.
-- -S: enumera recursos compartidos (shares).
-- -G: enumera grupos.
-- -i: enumera impresoras.
-- -r: obtiene información mediante enumeración RID cycling.
-- -u: usuario para autenticación.
-- -p: contraseña para autenticación.
-- -a: ejecuta una enumeración amplia (equivale a "all").
-- -M: enumera información de máquinas del dominio/workgroup.
-- -P: obtiene información de políticas de contraseña.
+- `-o`: obtiene información del sistema operativo remoto.
+- `-U`: enumera usuarios.
+- `-S`: enumera recursos compartidos (shares).
+- `-G`: enumera grupos.
+- `-i`: enumera impresoras.
+- `-r`: obtiene información mediante enumeración RID cycling.
+- `-u`: usuario para autenticación.
+- `-p`: contraseña para autenticación.
+- `-a`: ejecuta una enumeración amplia (equivale a "all").
+- `-M`: enumera información de máquinas del dominio/workgroup.
+- `-P`: obtiene información de políticas de contraseña.
 
 ### WinRM - PUERTO 5985/5986
 
@@ -486,8 +487,7 @@ john --format=krb5tgs --wordlist=/usr/share/wordlists/rockyou.txt kerberoast_has
 ```bash
 impacket-secretsdump 'domain.local/USER:PASSWORD'@10.10.10.10
 
-Con hash NTLM
-
+# Con hash NTLM
 impacket-secretsdump 'domain.local/USER'@10.10.10.10 -hashes :NTHASH
 
 # Con ticket Kerberos
@@ -759,5 +759,5 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.10 https-post-form "
 - `-t N`: número de tareas/hilos paralelos (por defecto: 16).
 - `-V` o `-vV`: modo verbose para ver cada intento.
 - `-f`: detener cuando se encuentra una credencial válida.
-- `-s PORT`: especifica un puerto personalizado si no es el estándar
+- `-s PORT`: especifica un puerto personalizado si no es el estándar.
 
